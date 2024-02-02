@@ -30,7 +30,6 @@ function Home() {
     const renderedImage = document.getElementById('binod');
     const renderedWidth = renderedImage.clientWidth;
     const renderedHeight = renderedImage.clientHeight;
-    c
 
   }
   useEffect(() => {
