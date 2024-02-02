@@ -40,7 +40,7 @@ function Blog() {
     }
   };
   const blogapi = async () => {
-    console.log('bfafa')
+   
     const response = await axios.get(`${url}/blog`);
     setBlog(response.data.data);
  

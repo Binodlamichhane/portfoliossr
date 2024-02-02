@@ -26,122 +26,130 @@ import { url } from "../constant.js";
 function Home() {
 
   const {pathname}= useLocation();
+  const imagesize=()=>{
+    const renderedImage = document.getElementById('binod');
+    const renderedWidth = renderedImage.clientWidth;
+    const renderedHeight = renderedImage.clientHeight;
+    c
+
+  }
   useEffect(() => {
-    // const  observer = new IntersectionObserver((entries) => {
-    //   entries.forEach((entry) => {
+    imagesize();
+    const  observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
     
-    //     if (entry.isIntersecting) {
-    //       entry.target.classList.add('animate-little');
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-little');
     
-    //     }
-    //   });
-    // },{
-    //   threshold:0
-    // });
-    // const elementsToObserve = document.querySelectorAll(".test");
-    // elementsToObserve.forEach((element) => {
-    //   observer.observe(element);
-    // });
+        }
+      });
+    },{
+      threshold:0
+    });
+    const elementsToObserve = document.querySelectorAll(".test");
+    elementsToObserve.forEach((element) => {
+      observer.observe(element);
+    });
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  const circle1 = {
-    display: "block",
-    position: "absolute",
-    top: "0%",
-    left: "51%",
-    width: "100px",
-    height: "100px",
-    margin: "-51px",
-    background: "red",
-    borderRadius: "51%",
-    textAlign: "center",
-    lineHeight: "100px",
-  };
-  const circle2 = {
-    display: "block",
-    position: "absolute",
-    top: "28.33%",
-    left: "93%",
-    width: "100px",
-    height: "100px",
-    margin: "-51px",
-    borderRadius: "51%",
-    textAlign: "center",
-    lineHeight: "100px",
-  };
-  const circle3 = {
-    display: "block",
-    position: "absolute",
-    top: "73.66%",
-    left: "93%",
-    width: "100px",
-    height: "100px",
-    margin: "-51px",
-    borderRadius: "51%",
-    textAlign: "center",
-    lineHeight: "100px",
-  };
-  const circle4 = {
-    display: "block",
-    position: "absolute",
-    top: "100%",
-    left: "51%",
-    width: "100px",
-    height: "100px",
-    margin: "-51px",
-    borderRadius: "51%",
-    textAlign: "center",
-    lineHeight: "100px",
-  };
-  const circle5 = {
-    display: "block",
-    position: "absolute",
-    top: "73.66%",
-    left: "9%",
-    width: "100px",
-    height: "100px",
-    margin: "-51px",
-    borderRadius: "51%",
-    textAlign: "center",
-    lineHeight: "100px",
-  };
-  const circle6 = {
-    display: "block",
-    position: "absolute",
-    top: "28%",
-    left: "8%",
-    width: "100px",
-    height: "100px",
-    margin: "-51px",
-    borderRadius: "51%",
-    textAlign: "center",
-    lineHeight: "100px",
-  };
-  const circle7 = {
-    display: "block",
-    position: "absolute",
-    top: "28%",
-    left: "8%",
-    width: "100px",
-    height: "100px",
-    margin: "-51px",
-    borderRadius: "51%",
-    textAlign: "center",
-    lineHeight: "100px",
-  };
-  const circle8 = {
-    display: "block",
-    position: "absolute",
-    top: "28%",
-    left: "8%",
-    width: "100px",
-    height: "100px",
-    margin: "-51px",
-    borderRadius: "51%",
-    textAlign: "center",
-    lineHeight: "100px",
-  };
+  // const circle1 = {
+  //   display: "block",
+  //   position: "absolute",
+  //   top: "0%",
+  //   left: "51%",
+  //   width: "100px",
+  //   height: "100px",
+  //   margin: "-51px",
+  //   background: "red",
+  //   borderRadius: "51%",
+  //   textAlign: "center",
+  //   lineHeight: "100px",
+  // };
+  // const circle2 = {
+  //   display: "block",
+  //   position: "absolute",
+  //   top: "28.33%",
+  //   left: "93%",
+  //   width: "100px",
+  //   height: "100px",
+  //   margin: "-51px",
+  //   borderRadius: "51%",
+  //   textAlign: "center",
+  //   lineHeight: "100px",
+  // };
+  // const circle3 = {
+  //   display: "block",
+  //   position: "absolute",
+  //   top: "73.66%",
+  //   left: "93%",
+  //   width: "100px",
+  //   height: "100px",
+  //   margin: "-51px",
+  //   borderRadius: "51%",
+  //   textAlign: "center",
+  //   lineHeight: "100px",
+  // };
+  // const circle4 = {
+  //   display: "block",
+  //   position: "absolute",
+  //   top: "100%",
+  //   left: "51%",
+  //   width: "100px",
+  //   height: "100px",
+  //   margin: "-51px",
+  //   borderRadius: "51%",
+  //   textAlign: "center",
+  //   lineHeight: "100px",
+  // };
+  // const circle5 = {
+  //   display: "block",
+  //   position: "absolute",
+  //   top: "73.66%",
+  //   left: "9%",
+  //   width: "100px",
+  //   height: "100px",
+  //   margin: "-51px",
+  //   borderRadius: "51%",
+  //   textAlign: "center",
+  //   lineHeight: "100px",
+  // };
+  // const circle6 = {
+  //   display: "block",
+  //   position: "absolute",
+  //   top: "28%",
+  //   left: "8%",
+  //   width: "100px",
+  //   height: "100px",
+  //   margin: "-51px",
+  //   borderRadius: "51%",
+  //   textAlign: "center",
+  //   lineHeight: "100px",
+  // };
+  // const circle7 = {
+  //   display: "block",
+  //   position: "absolute",
+  //   top: "28%",
+  //   left: "8%",
+  //   width: "100px",
+  //   height: "100px",
+  //   margin: "-51px",
+  //   borderRadius: "51%",
+  //   textAlign: "center",
+  //   lineHeight: "100px",
+  // };
+  // const circle8 = {
+  //   display: "block",
+  //   position: "absolute",
+  //   top: "28%",
+  //   left: "8%",
+  //   width: "100px",
+  //   height: "100px",
+  //   margin: "-51px",
+  //   borderRadius: "51%",
+  //   textAlign: "center",
+  //   lineHeight: "100px",
+  // };
 
   return (
     <div className="bg-zinc-600" id="outercontainer border">
@@ -152,7 +160,7 @@ function Home() {
           style={{ backgroundImage: `url(${bgImage})` }}
         >
           <div className="w-2/4 h-2/4 test">
-            <img className=" rounded-full shadow-2xl" src={`${binod}`} alt="binod"/>
+            <img id="binod" className=" rounded-full shadow-2xl" src={`${binod}`} alt="binod"/>
           </div>
         </div>
 

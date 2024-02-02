@@ -361,7 +361,7 @@ function Header() {
                   handleGoogleSignin(credentialResponse);
                 }}
                 onError={() => {
-                  console.log("Login Failed");
+                  
                 }}
                 width={"300px"}
                 type="standard"
@@ -419,7 +419,7 @@ function Header() {
               <div className="flex justify-center">
               <GoogleLogin
                 onSuccess={(credentialResponse) => {
-                  console.log(credentialResponse);
+               
                   handleGoogleLogin(credentialResponse);
                 }}
                 onError={(error) => {

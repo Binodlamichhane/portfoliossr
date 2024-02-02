@@ -9,10 +9,10 @@ function Services() {
   const location =useLocation();
   useEffect(() => {
     const hash= location.hash.replace('#','');
-    console.log('locaiton',location);
+   
     const targetElement=document.getElementById(hash)
     if(targetElement){
-      console.log('ragetee',targetElement);
+      
       targetElement.scrollIntoView({behavior:'smooth'})
     }
     else{

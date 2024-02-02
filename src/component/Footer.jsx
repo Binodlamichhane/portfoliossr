@@ -14,7 +14,7 @@ function Footer() {
   const handleFooterSubmit= async(e)=>{
     e.preventDefault();
     try{  
-      console.log('query data',data);
+   
       const response= await axios.post(`${url}/user/query`,data);
       if(response.status == 200){
         setData({name:'',email:'',phoneno:'',query:''});
@@ -22,7 +22,7 @@ function Footer() {
       }
        
   }catch(error){
-    console.log(error);
+ 
     }
  
   }
