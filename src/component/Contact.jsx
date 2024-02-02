@@ -39,7 +39,7 @@ function Contact() {
               <b className=" text-2xl ">Feel Free to Contact me!</b>
             </div>
             <div className="flex justify-center  my-8  animate-zoominout">
-              <img src={profile} className="  h-32  w-32 rounded-full" />
+              <img src={profile} alt="profileimg" className="  h-32  w-32 rounded-full" />
             </div>
 
             <div className="flex justify-center h-11">

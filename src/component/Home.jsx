@@ -16,7 +16,7 @@ import sqlimage from "../assets/image/sqlimage.png";
 import dsaimage from "../assets/image/dsaimage.jpg";
 import mongodbimage from "../assets/image/mongodbimage.png";
 import nodejsimage from "../assets/image/nodejsimage.jpg";
-import cssimage from "../assets/image/cssimage.jfif";
+// import cssimage from "../assets/image/cssimage.jfif";
 import skillbackgroundimage from "../assets/image/skillsectionbackgroundimage.jpg";
 import { useEffect, useState } from "react";
 // import { observer } from "./utility/animateintersection.js";
@@ -152,7 +152,7 @@ function Home() {
           style={{ backgroundImage: `url(${bgImage})` }}
         >
           <div className="w-2/4 h-2/4 test">
-            <img className=" rounded-full shadow-2xl" src={`${binod}`} />
+            <img className=" rounded-full shadow-2xl" src={`${binod}`} alt="binod"/>
           </div>
         </div>
 
@@ -188,19 +188,19 @@ function Home() {
         <p className=" text-3xl text-center m-4">Projects</p>
         <div className=" md:flex justify-between">
           <div className=" md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
-            <img src={`${mobileapp}`} />
+            <img src={`${mobileapp}`} alt="mobileapp" />
             <p className=" text-center">Amazon Clone</p>
           </div>
           <div className="md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
-            <img src={`${portfolio}`} />
+            <img src={`${portfolio}`}  alt="portfolio"/>
             <p className=" text-center">Portfolio</p>
           </div>
           <div className="md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
-            <img src={`${cardgame}`} />
+            <img src={`${cardgame}`}  alt="cardgame"/>
             <p className=" text-center">flipcard game</p>
           </div>
           <div className="md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
-            <img src={`${ecommerce}`} />
+            <img src={`${ecommerce}`} alt="ecommerce" />
             <p className=" text-center">Ecommercesite</p>
           </div>
         </div>
@@ -213,42 +213,42 @@ function Home() {
         >
           <div>
             <img
-              src={`${htmlimage}`}
+              src={`${htmlimage}`} alt="html"
               className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
           <div>
             <img
-              src={`${javascriptimage}`}
+              src={`${javascriptimage}`} alt="javascript"
               className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner "
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
           <div>
             <img
-              src={`${nodejsimage}`}
+              src={`${nodejsimage}`} alt="nodejs"
               className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
           <div>
             <img
-              src={`${mongodbimage}`}
+              src={`${mongodbimage}`} alt="mongodb"
               className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner "
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
           <div>
             <img
-              src={`${sqlimage}`}
+              src={`${sqlimage}`} alt="sqlimage"
               className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
           <div>
             <img
-              src={`${reactjsimage}`}
+              src={`${reactjsimage}`} alt="reactjs"
               className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
@@ -256,14 +256,14 @@ function Home() {
 
           <img
             className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
-            src={`${dsaimage}`}
+            src={`${dsaimage}`} alt="dsaimage"
             // style={{ width: 100, height: 100 }}
           />
-          <img
+          {/* <img
             className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
             src={`${cssimage}`}
             // style={{ width: 100, height: 100 }}
-          />
+          /> */}
         </div>
       </div>
       <div className="test">

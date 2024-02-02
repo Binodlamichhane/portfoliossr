@@ -50,12 +50,12 @@ function Resume() {
         <div id="first-section" className=" mx-7 md:mx-0 md:w-1/4 bg-[#41827f]  border-r-[10px]  rounded-tr-lg  border-orange-300 border-t-4" >
           <div className=" m-6 ">
             <img
-              src={profile}
+              src={profile} alt="profileimg"
               className="h-20 w-20 rounded-md outline-orange-300 outline m-auto my-6 blackanimi"
             />
             <div className="flex blackanimi">
               <img
-                src={skillimage}
+                src={skillimage} alt="skillimg"
                 className="h-7 w-7 md:mr-[10%]"
                 style={{ filter: "invert(100%)" }}
               />
@@ -77,7 +77,7 @@ function Resume() {
             </div>
             <div className=" mt-4 flex blackanimi ">
               <img
-                src={languageimage}
+                src={languageimage} alt="languageimage"
                 className=" h-7 w-7 sm:mr-[10%] "
                 style={{ filter: "invert(100%)" }}
               />
@@ -127,7 +127,7 @@ function Resume() {
             </div>
             <div className=" mt-4 flex ">
               <img
-                src={interesticon}
+                src={interesticon} alt="interesticon"
                 className=" h-7 w-7 md:mr-[10%]"
                 style={{ filter: "invert(100%)" }}
               />
@@ -137,19 +137,19 @@ function Resume() {
             </div>
             <div className="pb-2">
               <div className=" mt-4 flex border rounded-md blackanimi">
-                <img src={codingicon} className=" h-5 w-5 mr-4" />
+                <img src={codingicon} alt="codingicon" className=" h-5 w-5 mr-4" />
                 <p className="    font-binod ">coding</p>
               </div>
               <div className=" mt-2 flex border rounded-md blackanimi ">
-                <img src={readingicon} className=" h-5 w-5 mr-4" />
+                <img src={readingicon} alt="readingicon" className=" h-5 w-5 mr-4" />
                 <p className="    font-binod ">reading</p>
               </div>
               <div className=" mt-2 flex border rounded-md blackanimi">
-                <img src={musicicon} className=" h-5 w-5 mr-4" />
+                <img src={musicicon} alt="musicicon" className=" h-5 w-5 mr-4" />
                 <p className="    font-binod ">music</p>
               </div>
               <div className=" mt-2 flex border rounded-md blackanimi">
-                <img src={sporticon} className=" h-5 w-5 mr-4" />
+                <img src={sporticon} alt="sporticon" className=" h-5 w-5 mr-4" />
                 <p className="    font-binod ">sport</p>
               </div>
             </div>
@@ -164,7 +164,7 @@ function Resume() {
             Binod Lamichhane
           </p>
           <div className="flex  mt-3 blackanimi">
-              <img src={introductionicon} className=" h-7 w-7 mr-1 mt-1" />
+              <img src={introductionicon} alt="introduction" className=" h-7 w-7 mr-1 mt-1" />
               <p className="text-xl text-[#41827f]">Introduction</p>
             </div>
           <div className=" text-justify indent-7 blackanimi">
@@ -177,36 +177,36 @@ function Resume() {
           </div>
           <div id="second-part-contact-details" className=" w-full border bg-slate-400 flex flex-wrap p-5 rounded-md mt-2 blackanimi">
             <div className=" flex md:mr-7 py-1 ">
-              <img src={emailicon} className=" h-5 w-5  mr-[2px]  " />
+              <img src={emailicon} alt="email" className=" h-5 w-5  mr-[2px]  " />
               <Link to='mailto:binodlamichhane9866@gmail.com'><p className=" break-all">binodlamichhane9866@gmail.com</p></Link>
             </div>
             <div className=" flex mr-7 py-1">
-              <img src={mobileicon} className=" h-5 w-5 mr-[2px]  " />
+              <img src={mobileicon} alt="mobile" className=" h-5 w-5 mr-[2px]  " />
               <Link to='tel:9050423437'><p>9050423437</p></Link>
             </div>
             <div className=" flex mr-7 py-1">
-              <img src={locationicon} className=" h-5 w-5 mr-[2px]  " />
+              <img src={locationicon} alt="locationimg" className=" h-5 w-5 mr-[2px]  " />
               <p>noida,sector 15</p>
             </div>
             <div className=" flex md:mr-7 py-1">
-              <img src={linkedicon} className=" h-5 w-5 mr-[2px] " />
+              <img src={linkedicon} alt="linkedimg" className=" h-5 w-5 mr-[2px] " />
               <Link to="https://www.linkedin.com/in/binod-lamichhane-060b31228/"><p className=" break-all">linked.com/in/binodlamichhane</p></Link>
             </div>
             <div className=" flex mr-7 py-1">
-              <img src={githubicon} className=" h-6 w-6 mr-[2px]" />
+              <img src={githubicon} alt="githubicon" className=" h-6 w-6 mr-[2px]" />
               <Link to='https://github.com/Binodlamichhane/ecommercebackend'><p className=" break-all">github.com/in/binodlamichhane</p></Link>
             </div>
           </div>
           <div id="third-part-experience ">
           <div className="flex  mt-3 blackanimi ">
-              <img src={experienceicon} className=" h-7 w-7 mr-1" />
+              <img src={experienceicon} alt="experienceimg" className=" h-7 w-7 mr-1" />
               <p className="text-xl text-[#41827f]">Experience</p>
             </div>
             <p className="text-justify indent-7 blackanimi">I am currently working in inficare technology as react native mobile application developer.Its been 8 months working here. I have learnt a lot about mobile application development in this journey.I have learnt how to write clean and organized code,dynamic pages,api calls,ui design,animation, react navigation,gesture handler,debugging,problem solving etc. </p>
           </div>
           <div id="forth-part-project ">
           <div className="flex  mt-3">
-              <img src={projecticon} className=" h-7 w-7 mr-1" />
+              <img src={projecticon} alt="projecticon" className=" h-7 w-7 mr-1" />
               <p className="text-xl text-[#41827f]">Projects</p>
             </div>
             <ol className=" list-disc list-inside ">
@@ -227,7 +227,7 @@ function Resume() {
           <div id="fifth-part-education ">
             <div className="flex  mt-3 blackanimi">
             {/* <FontAwesomeIcon icon={faReadme} /> */}
-              <img src={educationicon} className=" h-7 w-7 mr-1" />
+              <img src={educationicon} alt="educationicon" className=" h-7 w-7 mr-1" />
               <p className="text-xl text-[#41827f]">Education</p>
             </div>
 
