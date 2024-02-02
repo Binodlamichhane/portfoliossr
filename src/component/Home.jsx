@@ -26,29 +26,23 @@ import { url } from "../constant.js";
 function Home() {
 
   const {pathname}= useLocation();
-  const imagesize=()=>{
-    const renderedImage = document.getElementById('binod');
-    const renderedWidth = renderedImage.clientWidth;
-    const renderedHeight = renderedImage.clientHeight;
 
-  }
   useEffect(() => {
-    imagesize();
-    const  observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+    // const  observer = new IntersectionObserver((entries) => {
+    //   entries.forEach((entry) => {
     
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-little');
+    //     if (entry.isIntersecting) {
+    //       entry.target.classList.add('animate-little');
     
-        }
-      });
-    },{
-      threshold:0
-    });
-    const elementsToObserve = document.querySelectorAll(".test");
-    elementsToObserve.forEach((element) => {
-      observer.observe(element);
-    });
+    //     }
+    //   });
+    // },{
+    //   threshold:0
+    // });
+    // const elementsToObserve = document.querySelectorAll(".test");
+    // elementsToObserve.forEach((element) => {
+    //   observer.observe(element);
+    // });
     window.scrollTo(0, 0);
   }, [pathname]);
 
