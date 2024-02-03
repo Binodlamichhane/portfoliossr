@@ -392,7 +392,7 @@ function Header() {
                 name="email"
                 value={loginform.email}
                 required
-                size={35}
+                size={30}
                 autoComplete
                 onChange={handleLogin}
               />
@@ -405,7 +405,7 @@ function Header() {
                 name="password"
                 value={loginform.password}
                 required
-                size={35}
+                size={30}
                 onChange={handleLogin}
               />
               <br />{" "}
