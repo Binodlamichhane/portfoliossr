@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
+
 import Header from "./Header";
 import Footer from "./Footer";
 import bgImage from "../assets/image/background2.jpg";
@@ -16,7 +17,7 @@ import sqlimage from "../assets/image/sqlimage.png";
 import dsaimage from "../assets/image/dsaimage.jpg";
 import mongodbimage from "../assets/image/mongodbimage.png";
 import nodejsimage from "../assets/image/nodejsimage.jpg";
-// import cssimage from "../assets/image/cssimage.jfif";
+import cssimage from "../assets/image/cssimage.jfif";
 import skillbackgroundimage from "../assets/image/skillsectionbackgroundimage.jpg";
 import { useEffect, useState } from "react";
 // import { observer } from "./utility/animateintersection.js";
@@ -175,8 +176,8 @@ function Home() {
             </div>
             <br />
             <br />
-            <div className=" md:mb-36">
-              <p className="  test text-justify">
+            <div className=" md:mb-36 md:px-5">
+              <p className="  text-center text-[#FFE370]">
                 I am probably the most passoniate developer you will ever get to
                 work with.If you have a greate project that need some amazing
                 skill,I'm your guy
@@ -186,70 +187,71 @@ function Home() {
         </div>
       </div>
       <div className=" w-3/4 m-auto test" id="porjects-section">
-        <p className=" text-3xl text-center m-4">Projects</p>
+        <p className=" text-[#FFE370] text-3xl text-center m-4">Projects</p>
         <div className=" md:flex justify-between">
           <div className=" md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
-            <img src={`${mobileapp}`} alt="mobileapp" />
-            <p className=" text-center">Amazon Clone</p>
+            <img  src={`${mobileapp}`} alt="mobileapp" loading="lazy"/>
+            <p className=" text-center text-white">Amazon Clone</p>
           </div>
           <div className="md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
-            <img src={`${portfolio}`}  alt="portfolio"/>
-            <p className=" text-center">Portfolio</p>
+            {/* <LazyLoadImage src={portfolio} alt="portfolio " height={300} width={300}/> */}
+            <img  src={`${portfolio}`}  alt="portfolio" loading="lazy"/>
+            <p className=" text-center text-white">Portfolio</p>
           </div>
           <div className="md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
-            <img src={`${cardgame}`}  alt="cardgame"/>
-            <p className=" text-center">flipcard game</p>
+            <img  src={`${cardgame}`}  alt="cardgame" loading="lazy"/>
+            <p className=" text-center text-white">flipcard game</p>
           </div>
           <div className="md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
-            <img src={`${ecommerce}`} alt="ecommerce" />
-            <p className=" text-center">Ecommercesite</p>
+            <img  src={`${ecommerce}`} alt="ecommerce" loading="lazy"/>
+            <p className=" text-center text-white">Ecommercesite</p>
           </div>
         </div>
       </div>
       <div className=" w-3/4 m-auto test" id="skill-section">
-        <p className=" text-center text-3xl mt-4">Skills</p>
+        <p className=" text-[#FFE370] text-center text-3xl mt-4">Skills</p>
         <div
           className=" flex  flex-wrap  mx-auto  justify-center  my-4 mb-8  test z-0 rounded-md"
           style={{ backgroundImage: `url(${skillbackgroundimage})` }}
         >
           <div>
             <img
-              src={`${htmlimage}`} alt="html"
+              src={`${htmlimage}`} alt="html" loading="lazy"
               className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
           <div>
             <img
-              src={`${javascriptimage}`} alt="javascript"
+              src={`${javascriptimage}`} alt="javascript" loading="lazy"
               className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner "
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
           <div>
             <img
-              src={`${nodejsimage}`} alt="nodejs"
+              src={`${nodejsimage}`} alt="nodejs" loading="lazy"
               className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
           <div>
             <img
-              src={`${mongodbimage}`} alt="mongodb"
+              src={`${mongodbimage}`} alt="mongodb" loading="lazy"
               className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner "
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
           <div>
             <img
-              src={`${sqlimage}`} alt="sqlimage"
+              src={`${sqlimage}`} alt="sqlimage" loading="lazy"
               className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
           </div>
           <div>
             <img
-              src={`${reactjsimage}`} alt="reactjs"
+              src={`${reactjsimage}`} alt="reactjs" loading="lazy"
               className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
               // style={{ width: 100, height: 100, borderRadius: "50%" }}
             />
@@ -257,14 +259,14 @@ function Home() {
 
           <img
             className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
-            src={`${dsaimage}`} alt="dsaimage"
+            src={`${dsaimage}`} alt="dsaimage" loading="lazy"
             // style={{ width: 100, height: 100 }}
           />
-          {/* <img
+          <img
             className=" w-[100px] h-[100px] md:w-[10vw] md:h-[10vw] rounded-full m-2 animate-spinner"
-            src={`${cssimage}`}
+            src={`${cssimage}`} alt='cssimg' loading="lazy"
             // style={{ width: 100, height: 100 }}
-          /> */}
+          />
         </div>
       </div>
       <div className="test">

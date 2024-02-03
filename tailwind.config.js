@@ -5,6 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    // colors:{
+    //   'binod':'#7CFF00',
+    //   'footercolor':'#C98AFF',
+    //   'footertitle':'#FFE370',
+    // },
     fontFamily:{
       'Noto':['Noto Sans', 'sans-serif'],
       'binod': ['Staatliches', 'sans-serif']

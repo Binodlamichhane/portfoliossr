@@ -44,23 +44,27 @@ function Contact() {
 
             <div className="flex justify-center h-11">
               <Link
+                 aria-label="linkedin"
                 to="https://www.linkedin.com/in/binod-lamichhane-060b31228/"
                 className="  text-zinc-600 hover:text-black mx-2"
               >
                 <FontAwesomeIcon
                   className=" hover:size-10"
+               
                   icon={faLinkedinIn}
                   size="2x"
                 />
               </Link>
-              <Link to="#" className="text-zinc-600 hover:text-black  mx-2">
+              <Link  aria-label="twitter" to="#" className="text-zinc-600 hover:text-black  mx-2">
                 <FontAwesomeIcon
                   className=" hover:size-10"
+                 
                   icon={faXTwitter}
                   size="2x"
                 />
               </Link>
               <Link
+              aria-label="github"
                 to="https://github.com/Binodlamichhane/ecommercebackend"
                 className="text-zinc-600 hover:text-black  mx-2"
               >
@@ -70,9 +74,10 @@ function Contact() {
                   size="2x"
                 />
               </Link>
-              <Link to="#" className="text-zinc-600  hover:text-black  mx-2">
+              <Link  aria-label="facebook" to="#" className="text-zinc-600  hover:text-black  mx-2">
                 <FontAwesomeIcon
                   className=" hover:size-10"
+                 
                   icon={faFacebook}
                   size="2x"
                 />

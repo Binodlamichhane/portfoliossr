@@ -1,8 +1,7 @@
 import { useState,useEffect } from 'react'
 import axios from 'axios'
 import { Routes,Route } from 'react-router-dom'
-import reactLogo from './assets/react.svg'
-import './App.css'
+
 import Home from './component/Home'
 import Contact from './component/Contact'
 import Resume from './component/Resume'
