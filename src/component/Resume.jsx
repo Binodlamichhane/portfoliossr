@@ -4,7 +4,7 @@ import React,{useEffect} from "react";
 import { Link, useLocation } from 'react-router-dom';
 import Header from "./Header";
 import Footer from "./Footer";
-import profile from "../assets/image/binodphoto.jpg";
+import profile from "../assets/image/binodphoto.webp";
 import skillimage from "../assets/image/skillsimage.png";
 import languageimage from "../assets/image/languagesiconimage.png";
 import interesticon from "../assets/image/interesticon.png";

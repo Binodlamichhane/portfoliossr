@@ -12,8 +12,8 @@ import {
   faFacebook,
   faXTwitter
 } from "@fortawesome/free-brands-svg-icons";
-import profile from "../assets/image/binodphoto.jpg";
-import backgroundimage from "../assets/image/contactpagebackgroundimage.jpg";
+import profile from "../assets/image/binodphoto.webp";
+import backgroundimage from "../assets/image/contactpagebackgroundimage.webp";
 // import { observer } from "./utility/animateintersection";
 function Contact() {
 

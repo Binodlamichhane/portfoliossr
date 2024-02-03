@@ -4,21 +4,21 @@ import axios from "axios";
 
 import Header from "./Header";
 import Footer from "./Footer";
-import bgImage from "../assets/image/background2.jpg";
-import binod from "../assets/image/binodphoto.jpg";
-import portfolio from "../assets/image/portfolioimage.jpg";
-import mobileapp from "../assets/image/mobileappimage.jpg";
-import cardgame from "../assets/image/flipcardgameimage.jpg";
-import ecommerce from "../assets/image/ecommerceshoppingsite.jpg";
-import htmlimage from "../assets/image/htmlimage.png";
-import javascriptimage from "../assets/image/javascriptimage.png";
-import reactjsimage from "../assets/image/reactjsimage.jpg";
-import sqlimage from "../assets/image/sqlimage.png";
-import dsaimage from "../assets/image/dsaimage.jpg";
-import mongodbimage from "../assets/image/mongodbimage.png";
-import nodejsimage from "../assets/image/nodejsimage.jpg";
-import cssimage from "../assets/image/cssimage.jfif";
-import skillbackgroundimage from "../assets/image/skillsectionbackgroundimage.jpg";
+import bgImage from "../assets/image/background2.webp";
+import binod from "../assets/image/binodphoto.webp";
+import portfolio from "../assets/image/portfolioimage.webp";
+import mobileapp from "../assets/image/mobileappimage.webp";
+import cardgame from "../assets/image/flipcardgameimage.webp";
+import ecommerce from "../assets/image/ecommerceshoppingsite.webp";
+import htmlimage from "../assets/image/htmlimage.webp";
+import javascriptimage from "../assets/image/javascriptimage.webp";
+import reactjsimage from "../assets/image/reactjsimage.png";
+import sqlimage from "../assets/image/sqlimage.webp";
+import dsaimage from "../assets/image/dsaimage.webp";
+import mongodbimage from "../assets/image/mongodbimage.webp";
+import nodejsimage from "../assets/image/nodejsimage.png";
+import cssimage from "../assets/image/cssimage.webp";
+import skillbackgroundimage from "../assets/image/skillsectionbackgroundimage.webp";
 import { useEffect, useState } from "react";
 // import { observer } from "./utility/animateintersection.js";
 
@@ -190,16 +190,16 @@ function Home() {
         <p className=" text-[#FFE370] text-3xl text-center m-4">Projects</p>
         <div className=" md:flex justify-between">
           <div className=" md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
-            <img  src={`${mobileapp}`} alt="mobileapp" loading="lazy"/>
+            <img  src={`${mobileapp}`} alt="mobileapp" loading="lazy" />
             <p className=" text-center text-white">Amazon Clone</p>
           </div>
           <div className="md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
             {/* <LazyLoadImage src={portfolio} alt="portfolio " height={300} width={300}/> */}
-            <img  src={`${portfolio}`}  alt="portfolio" loading="lazy"/>
+            <img  src={`${portfolio}`}  alt="portfolio" loading="lazy" />
             <p className=" text-center text-white">Portfolio</p>
           </div>
           <div className="md:w-1/4 h-1/4 border rounded-md hover:opacity-30">
-            <img  src={`${cardgame}`}  alt="cardgame" loading="lazy"/>
+            <img  src={`${cardgame}`}  alt="cardgame" loading="lazy" />
             <p className=" text-center text-white">flipcard game</p>
           </div>
           <div className="md:w-1/4 h-1/4 border rounded-md hover:opacity-30">

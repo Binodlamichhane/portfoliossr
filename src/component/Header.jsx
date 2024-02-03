@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faList } from "@fortawesome/free-solid-svg-icons";
-import headerimg from "../assets/image/headerimage.jpg";
+import headerimg from "../assets/image/headerimage.webp";
 import { url } from "../constant";
 function Header() {
   const [signin, setSignIn] = useState(false);
