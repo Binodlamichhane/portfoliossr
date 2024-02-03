@@ -158,7 +158,7 @@ function Header() {
       <div className=" w-full h-20  flex sticky top-0  bg-zinc-600  z-20 ">
         <div className=" w-[100%]  md:px-0 md:w-3/4 flex m-auto  justify-between items-center ">
           <div className=" h-14 w-14 rounded-full ml-3 md:ml-0">
-            <img src={headerimg} alt="headerimg" className=" h-14 w-16 rounded-full" />
+            <img src={headerimg} alt="headerimg" loading="lazy" className=" h-14 w-16 rounded-full" />
           </div>
           <div className=" w-1/4 md:w-2/4 md:min-w-60  ">
             <ul className=" justify-between  hidden md:flex ">
